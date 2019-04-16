@@ -7,7 +7,7 @@ class GridLayout(QWidget):
         self.GridUi()
 
     def GridUi(self):
-        self.resize(400, 200)
+        self.resize(400, 100)
         self.move(400, 400)
         self.setWindowTitle('Latihan 3')
 
