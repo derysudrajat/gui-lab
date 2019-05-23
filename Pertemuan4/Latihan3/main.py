@@ -1,14 +1,12 @@
 import sys
-
 from PyQt5.QtWidgets import QApplication
 
-from Pertemuan4.Latihan3.FirstForm import*
+from Pertemuan4.Latihan3.Latihan3 import *
 
 if __name__ == '__main__':
     a = QApplication(sys.argv)
-    minfrom = FirstForm()
-    minfrom.show()
+
+    form = GridLayout()
+    form.show()
+
     a.exec_()
-
-
-

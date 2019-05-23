@@ -1,12 +1,12 @@
 import sys
+from PyQt5.QtWidgets import QApplication
 
-from Pertemuan4.Latihan1.From3Label import*
+from Pertemuan4.Latihan1.VBoxLayout import *
 
 if __name__ == '__main__':
     a = QApplication(sys.argv)
-    minfrom = From3Label()
-    minfrom.show()
+
+    myForm = VBoxLayout()
+    myForm.show()
+
     a.exec_()
-
-
-
