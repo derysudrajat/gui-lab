@@ -1,6 +1,6 @@
 import sys
 
-from Pertemuan4.FormSederhana.FormSederhana import*
+from Pertemuan3.FormSederhana.FormSederhana import*
 
 if __name__ == '__main__':
     a = QApplication(sys.argv)

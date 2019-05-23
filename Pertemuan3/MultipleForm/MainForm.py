@@ -1,9 +1,9 @@
 from PyQt5.QtWidgets import QWidget, QPushButton
 
-from Pertemuan4.Latihan3.SeccondForm import SeecondForm
+from Pertemuan3.MultipleForm.OtherForm import OtherForm
 
 
-class FirstForm(QWidget):
+class MainForm(QWidget):
     def __init__(self):
         super().__init__()
         self.setupUi()
@@ -26,7 +26,7 @@ class FirstForm(QWidget):
 
 
     def buttonClick(self):
-        self.form = SeecondForm()
+        self.form = OtherForm()
         self.form.show()
 
 
