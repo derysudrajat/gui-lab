@@ -3,6 +3,11 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
+### Author
+# @Dery Sudrajat
+
+from Latihan.Regist import RegistForm
+
 class MainForm(QWidget):
     def __init__(self):
         super().__init__()
@@ -13,24 +18,38 @@ class MainForm(QWidget):
         self.move(300, 300)
         self.setWindowTitle('Kuis Pemgrograman GUI')
 
-        self.fontLabel = QLabel('Username')
-        self.fontCombo = QLineEdit()
+        self.lbUsername = QLabel('Username')
+        self.leUsername = QLineEdit()
 
-        self.sizeLabel = QLabel('Password')
-        self.sizeSpinBox = QLineEdit()
+        self.lbPassword = QLabel('Password')
+        self.lePassword = QLineEdit()
+        self.lePassword.setEchoMode(QLineEdit.Password)
 
-        self.sampleLabel = QPushButton('Login')
-        self.sampleLabel2 = QPushButton('Clear')
+        self.btnLogin= QPushButton('Login')
+        self.btnClear = QPushButton('Clear')
 
         layout = QGridLayout()
-        layout.addWidget(self.fontLabel, 0, 0)
-        layout.addWidget(self.fontCombo, 0, 1,1,2)
-        layout.addWidget(self.sizeLabel, 1, 0)
-        layout.addWidget(self.sizeSpinBox, 1, 1,1,2)
-        layout.addWidget(self.sampleLabel, 2, 1)
-        layout.addWidget(self.sampleLabel2, 2, 2)
+        layout.addWidget(self.lbUsername, 0, 0)
+        layout.addWidget(self.leUsername, 0, 1,1,2)
+        layout.addWidget(self.lbPassword, 1, 0)
+        layout.addWidget(self.lePassword, 1, 1,1,2)
+        layout.addWidget(self.btnLogin, 2, 1)
+        layout.addWidget(self.btnClear, 2, 2)
         # layout.addStretch()
         self.setLayout(layout)
+
+        self.btnLogin.clicked.connect(self.Login)
+        self.btnClear.clicked.connect(self.Clear)
+
+
+    def Login(self):
+        self.form = RegistForm()
+        self.form.show()
+        self.close()
+
+    def Clear(self):
+        self.leUsername.setText("")
+        self.lePassword.setText("")
 
 
 if __name__ == '__main__':
