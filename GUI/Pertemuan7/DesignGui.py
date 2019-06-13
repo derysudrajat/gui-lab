@@ -1,7 +1,4 @@
-import sys
-
-from GUI.lessonfour import *
-from PyQt5.QtCore import *
+from GUI.Pertemuan7.lessonfour import *
 from PyQt5.QtWidgets import *
 
 
