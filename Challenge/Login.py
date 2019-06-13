@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import *
 ### Author
 # @Dery Sudrajat
 
-from Latihan.Regist import RegistForm
+from Challenge.Regist import RegistForm
 
 class MainForm(QWidget):
     def __init__(self):
