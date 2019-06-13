@@ -1,7 +1,7 @@
 import sys
 
 from PyQt5 import QtWidgets
-from GUI.Pertemuan8.Lesson2.MainWindow import Ui_MainWindow
+from Pertemuan7_8_GUI.Pertemuan8.Lesson2.MainWindow import Ui_MainWindow
 
 class MainWindow_EXEC():
 
